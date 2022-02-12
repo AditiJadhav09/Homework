@@ -1,12 +1,12 @@
-vector<int> findArrayIntersection(vector<int> &arr1,n,vector<int> &arr2,m){
-  vector<int> ans;
-for(int i=0;i<n;i++){
-int element = arr1[i];
-  for(int j=0;j<m;j++){
-  if(element==arr2[j]){
-   ans.push_back(element);
-    arr2[j]=INT_MIN;
-  }
-  }
+/*Pair Sum*/
+/*You are given an arr of size n and an integer s.Return the list of all pairs of elements such that each sum of elements of each pair is equal to s*/
+/* 5 5
+   1 2 3 4 5
+   output
+   1 4
+   2 3
+ */
+vector<vector<int>> pairSum (vector<int> &arr,int s){
+vector<vector<int>> ans;
+  for(int i=0;i
 }
-} 
