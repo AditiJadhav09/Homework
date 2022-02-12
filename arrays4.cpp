@@ -6,7 +6,9 @@ int element = arr1[i];
   if(element==arr2[j]){
    ans.push_back(element);
     arr2[j]=INT_MIN;
+    break;
   }
   }
 }
+  return ans;
 } 
