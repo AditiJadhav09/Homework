@@ -13,9 +13,11 @@ int left=0,right=n-1;
    while(arr[j]==1){
      right--;
     }
-    swap(arr[left],arr[right]);
-    left++;
-    right--;
+    if(arr[left]==1 && arr[right]==0 && left<right){
+      swap(arr[left],arr[right]);
+      left++;
+      right--;
+    }  
   }
 }
   
